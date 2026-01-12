@@ -18,7 +18,7 @@ class ChangePasswordPage extends Page implements HasForms
 {
     use InteractsWithForms;
 
-    protected static BackedEnum|string|null = 'heroicon-o-document-text';
+    protected static BackedEnum|string|null $navigationIcon = 'heroicon-o-document-text';
     protected static string $view = 'change-password::filament.pages.change-password';
     protected static ?string $slug = 'change-password';
     protected static bool $shouldRegisterNavigation = false;
