@@ -12,12 +12,13 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Notifications\Notification;
 use Closure;
 use Hardikkhorasiya09\ChangePassword\ChangePasswordPlugin;
+use BackedEnum;
 
 class ChangePasswordPage extends Page implements HasForms
 {
     use InteractsWithForms;
 
-    protected static ?string $navigationIcon = 'heroicon-o-document-text';
+    protected static BackedEnum|string|null = 'heroicon-o-document-text';
     protected static string $view = 'change-password::filament.pages.change-password';
     protected static ?string $slug = 'change-password';
     protected static bool $shouldRegisterNavigation = false;
